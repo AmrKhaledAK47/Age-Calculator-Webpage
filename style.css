@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Poppins'; 
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: 'Poppins-XBI'; 
+    src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Poppins-I'; 
+    src: url('./assets/fonts/Poppins-Italic.ttf');
+}
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 94%);
+}
+.page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 50vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:2fr 5fr;
+    padding: 50px;
+    border-radius: 4.5% 4.5% 22% 4.5%;
+}
+.day-section{
+    grid-area: day;
+}
+.month-section{
+    grid-area: month;
+}
+.year-section{
+    grid-area: year;
+}
+.input-section{
+    display: grid;
+    grid-template-areas: 
+    "day month year . . . .";
+    margin: 20px 40px 0 0;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding-bottom: 30px;
+}
+.input-section > *{
+    width: 9vw;
+    position: relative;
+}
+input{
+    font-family:'Poppins';
+    padding: 0.6vw 1.7vw 0.6vw 1.1vw;
+    font-size:1.8vw;
+    width:9vw;
+    height: 8vh;
+    color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    border: 0.25px solid hsl(0, 0%, 86%);
+}
+input:focus{
+    outline: 0.25px solid hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+label{
+    color: hsl(0, 1%, 44%);
+    font-size:1vw;
+    font-family:'Poppins';
+    position: absolute;
+    letter-spacing: 2px;
+    top:-25px;
+    left: 0px;
+}
+.btn-sec{
+    position: relative;
+}
+button > img{
+    width: 32px; 
+}
+button{
+    background-color:hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    right: 40px;
+    bottom: -33px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:hsl(0, 0%, 8%);
+}
+.result-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    color: hsl(0, 0%, 8%);
+    font-family:'Poppins-XBI';
+    font-weight:bold;
+    font-style: italic;
+    font-size: 5.7vw;
+}
+.result-section > *{
+    height: 15vh;
+}
+span{
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 10px;
+}
+.err-msg{
+    font-family:'Poppins-I';
+    font-style: italic;
+    font-weight:bold;
+    font-size: 10px;
+}
+.err{
+    color: hsl(0, 69%, 61%);
+}
+.err-input{
+    border: 0.25px solid hsl(0, 69%, 61%);  
+}
+p{
+    margin: 5px 0 0;
+    visibility: hidden;
+}
+.show{
+    visibility:visible;
+}
+.letter{
+    letter-spacing:normal; 
+}
+@media (max-width:700px){
+    body {
+        max-height: 100vh;
+        overflow-y: hidden;
+     }
+    .card{
+        width: 90vw;
+        height: 70vh;
+        padding: 50px 30px;
+        margin-top: 80px;
+    }
+    .input-section{
+        grid-template-areas: 
+        "day month year";
+        margin: 20px 0 0;
+        width: 70vw;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        border: 0;
+    }
+    .container{
+        border-bottom: 1px solid hsl(0, 0%, 86%);
+        width: 75vw;
+    }
+    .input-section{
+        width: 75vw;
+    }
+    .input-section > *{
+    width: 21vw;
+    }
+    input{
+        font-size:18px;
+        width:21vw;
+        height: 8vh;
+        padding: 7px 10px;
+    }
+    label{
+        font-size:12px;
+        letter-spacing: 2px;
+        top:-20px;
+        left: 4px;
+    }
+    .btn-sec{
+        text-align: center;
+    }
+    button{
+        width: 55px;
+        height: 55px;
+        right: 41.9%;
+        top: -27px;
+    }
+    button > img{
+        width: 25px; 
+    }
+    .page{
+        align-items: start;
+    }
+    .head{
+        font-size:9.5vw;
+    }
+    .result-section > *{
+        height: 10vh;
+    }
+    .result-section{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+}

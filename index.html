@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false;" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="card">
+        <div class="container">
+          <div class="input-section">
+            <div class="day-section">
+              <input
+                type="number"
+                class="day-input inputs"
+                id="day"
+                placeholder="DD"
+              />
+              <label class="label-info" for="day">DAY</label>
+              <p class="err-msg err"></p>
+            </div>
+            <div class="month-section">
+              <input
+                type="number"
+                class="month-input inputs"
+                id="month"
+                placeholder="MM"
+              />
+              <label class="label-info" for="month">MONTH</label>
+              <p class="err-msg err"></p>
+            </div>
+            <div class="year-section">
+              <input
+                type="number"
+                class="month-input inputs"
+                id="year"
+                placeholder="YYYY"
+              />
+              <label class="label-info " for="year">YEAR</label>
+              <p class="err-msg err"></p>
+            </div>
+          </div>
+          <div class="btn-sec">
+            <button id="btn">
+              <img
+                src="./assets/images/icon-arrow.svg"
+                alt="down arrow button"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="result-section">
+          <div class="years-result">
+            <div class="head">
+              <span class="final-years dashes">--</span> years
+            </div>
+          </div>
+          <div class="months-result">
+            <div class="head">
+              <span class="final-months dashes">--</span> months
+            </div>
+          </div>
+          <div class="days-result">
+            <div class="head">
+              <span class="final-days dashes">--</span> days
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
