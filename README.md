@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/responsive-age-calculator-by-html-css-and-js-OSRpgr91d-)
 - Live Site URL: [Live Url](https://celadon-parfait-777bdd.netlify.app/)
 
 ## My process
